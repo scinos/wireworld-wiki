@@ -1,3 +1,3 @@
 A diode is a device that allows an electron to travel in one direction, but not in the other. Example:
 
-{{img/diodes.gif|Diodes}}
+{{img/diode.gif|Diodes}}
