@@ -11,9 +11,6 @@ But when happen when the wire forms a corner? We have two options:
  ░░░░         ░░░    <-- missing block
 }}}
 
-In both cases, the wire behaves the same and the electron speed is maintained. Using one or the other is a matter of personal taste.
-
-
 The same applies to junctions:
 
 {{{
@@ -28,5 +25,7 @@ Loose    ░░░        ░░░░         ░░░░
 Solid    ░░░░       ░░░░░        ░░░░░
             ░           ░            ░░░
             ░            ░
-
 }}}
+
+
+In both cases, the wire behaves the same and the electron speed is maintained. Using one or the other is a matter of personal taste.
