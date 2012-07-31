@@ -1,4 +1,5 @@
 == WireWorld Electronics 101 ==
 
-[[WireWorld%20Electronics%20101%20-%20Wires%20and%20Junctions|WireWorld Electronics 101 - Wires and Junctions]]
-[[WireWorldElectronics101-Diodes.wiki|WireWorld Electronics 101 - Diodes]]
+# [[WireWorldElectronics101-WiresAndJunctions|WireWorld Electronics 101 - Wires and Junctions]]
+# [[WireWorldElectronics101-Signals.wiki|WireWorld Electronics 101 - Signals]]
+# [[WireWorldElectronics101-Diodes.wiki|WireWorld Electronics 101 - Diodes]]

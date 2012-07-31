@@ -1,40 +1,15 @@
 Signals in WireWorld propagate in the form of electrons (composed by a head and a tail). The electron will travel across the copper (aka the wire) at the speed of light (the speed of light is defined as the max speed in the universe, that is one cell per iteration).
 
-A line of copper is called a wire. Wires can be aligned in verical, horizontal, diagonal or any combination of them:
+A line of copper is called a wire. Wires can be aligned in vertical, horizontal, diagonal or any combination of them:
 
-{{{
-   ░      ░                               ░
-   ░       ░                      ░░       ░
-   ░        ░       ░░░░░░░░        ░     ░  
-   ░         ░                       ░   ░
-   ░          ░                       ░░░
-}}}
+{{img/wires.gif|4 types of wires: vertical, diagonal, horizontal and random}}
 
 But when happen when the wire forms a corner? We have two options:
 
-{{{
-  Solid        Loose
-  -----        -----
+{{img/corners.gif|2 corners, one solid and one loose}}
 
-    ░            ░
-    ░            ░
- ░░░░         ░░░    <-- missing block
-}}}
+The first one is a solid corner, the wire has all the blocks from the corner. The second one is a loose corner, the block at the bottom-right of the corner is missing. In both cases, the wire behaves the same and the electron speed is maintained, so none of them is superior in practical terms. However, if you carefully study the solid corner, you'll realize there are two cells with three copper neighbors; this creates a double-headed electron every time a electron enters in the corner. This is not bad per se, (in fact, two-headed or three-headed electrons are common in lots of circuits), but you should not introduce this tiny bit of noise if you can avoid it. In other words, loose corner is preferred.
 
 The same applies to junctions:
 
-{{{
-            ░            ░                         
-            ░           ░            ░░░      
-Loose    ░░░        ░░░░         ░░░░      
-            ░           ░            ░░░       
-            ░            ░
-
-            ░            ░
-            ░           ░            ░░░
-Solid    ░░░░       ░░░░░        ░░░░░
-            ░           ░            ░░░
-            ░            ░
-}}}
-
-In both cases, the wire behaves the same and the electron speed is maintained. Using one or the other is a matter of personal taste.
+{{img/junctions.gif|6 junctions, the first row shows 3 solid junctions and the second row their loose counterpart}}
