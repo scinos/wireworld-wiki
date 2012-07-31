@@ -1,5 +1,15 @@
 Signals in WireWorld propagate in the form of electrons (composed by a head and a tail). The electron will travel across the copper (aka the wire) at the speed of light (the speed of light is defined as the max speed in the universe, that is one cell per iteration).
 
+A line of copper is called a wire. Wires can be aligned in verical, horizontal, diagonal or any combination of them:
+
+{{{
+   ░      ░                               ░
+   ░       ░                      ░░       ░
+   ░        ░       ░░░░░░░░        ░     ░  
+   ░         ░                       ░   ░
+   ░          ░                       ░░░
+}}}
+
 But when happen when the wire forms a corner? We have two options:
 
 {{{
@@ -26,6 +36,5 @@ Solid    ░░░░       ░░░░░        ░░░░░
             ░           ░            ░░░
             ░            ░
 }}}
-
 
 In both cases, the wire behaves the same and the electron speed is maintained. Using one or the other is a matter of personal taste.
