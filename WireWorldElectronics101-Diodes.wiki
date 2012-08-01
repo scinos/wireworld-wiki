@@ -1,3 +1,15 @@
-A diode is a device that allows an electron to travel in one direction, but not in the other. Example:
+A diode is a device that allows an electron to flow only one way. Example:
 
 {{img/diode.gif|Diodes}}
+
+Diodes are not used so much in practice, but it a good starting point before jumping in logic gates.
+
+In the image, you can see two diodes. When the electron enters the diode by the side with the empty cell (the black dot inside the diode), it can not cross the diode and it disappears. But if the electron enters in the diode using the other side, the side with three copper blocks, it can cross the diode and keep its journey over the wire.
+
+To understand why this works, you need to remember the rules for the underlying CA: a copper cell will become an electron-head cell if and only if it have one or two electron-head neighbors. "One or two" is the key here. When the electron comes from the 'black-dot' side, there are *three* electron-head cells at the end. So the first copper-cell of the wire is *not* transformed into an electron. When the electron is traveling the other way, there are only two electron-head cells at the end, so the first cell of the wire can turn into an electron-head, propagating the signal.
+
+Using that knowledge, we can design another basic piece for our circuit, but almost useless by itself: a barrier
+
+{{img/barrier.gif|Barrier}}
+
+The barrier itself is useless (you can just cut the wire and you'll get the same effect), but the concept it is used as a component inside gates or other components. In fact, the diode has a barrier.
