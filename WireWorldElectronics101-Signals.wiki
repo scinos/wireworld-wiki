@@ -2,6 +2,11 @@
 
 Until now, we have talked about single electrons. An electron always is two cells in size, one for the electron-head and another one for the electron-tail. Using [[WireWorldElectronics101-WiresAndJunctions|wires]], we can transport a stream of electrons from one point to another, and the wires and well designed gates will preserve the electrons pattern.
 
-An electron represents a binary 1, and a lack of electron (i.e. an empty space in the electrons stream) represents a binary 0. In order to effectively transport data, electrons and "gaps" must have the same size. For example, if we want to send the binary number 11101 using a fixed size //m//, we whole pattern will be 5 (number of digits) times //m// cells. Each block of //m// cells will contain an electron if the bit is 1, or nothing if the bit is 0. Take a look to the next picture. The same signal (11101) is represented using size 4, 6, 7 and 8:
+An electron represents a binary 1, and a lack of electron (i.e. an empty space in the electrons stream) represents a binary 0. In order to effectively transport data, electrons and "gaps" must have the same size. For example, if we want to send the binary number 11101 using a fixed size //m//, we whole pattern will be 5 (number of digits) times //m// cells. Each block of //m// cells will contain an electron if the bit is 1, or nothing if the bit is 0. Take a look to the next picture. The same signal (11101) is represented using size 3, 6, 7 and 8:
 
 {{img/examplesignals.gif|Example Signals}}
+
+A circuit using //m// as size for its patterns, is using a //m microns technology//. As the electrons need to have at least one copper cell between them, the smallest is 3 microns.
+Small components usually can be used in any micron technology (for example, the [[WireWorldElectronics101-Diodes.wiki|diode]] works for 3-micron technology and above), but complex components needs to be designed for a particular micron technology. There are lots of component designs for lots of different microns technologies. Usually, bigger microns means bigger components and bigger circuits, but that is not true for all the cases. As a side note, the original WireWorld paper suggested a 13-micron technologies.
+
+Please, note that your micron technology choice will affect all your circuit. Every single component must be designed for that particular micron technology, even wires lengths, specially if you are different streams of electrons.
